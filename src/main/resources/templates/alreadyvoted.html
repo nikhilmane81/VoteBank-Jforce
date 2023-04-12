@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Registration Success</title>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container text-center">
+  <h3>You have already Voted, Find confirmation below, Thank you!</h3>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="candidate: ${candidate}">
+      <td th:text="${candidate.id}">Candidate ID</td>
+      <td th:text="${candidate.name}">Candidate Name</td>
+    </tr>
+    </tbody>
+  </table>
+  <h4><a th:href="@{/candidate}">Click here to go back</a></h4>
+</div>
+
+</body>
+</html>

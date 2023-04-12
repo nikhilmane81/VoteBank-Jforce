@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Welcome to Jforce VoteBank</title>
+  <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container text-center mt-5">
+  <h1>Welcome to Jforce VoteBank</h1>
+  <div class="row mt-5">
+    <div class="col-sm-4 offset-sm-4">
+      <h3><a th:href="@{/candidate}" class="btn btn-primary btn-block">Vote for Candidate</a></h3>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-4 offset-sm-4">
+      <h3><a th:href="@{/register}" class="btn btn-secondary btn-block">Register</a></h3>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-4 offset-sm-4">
+      <h3><a th:href="@{/login}" class="btn btn-secondary btn-block">Login</a></h3>
+    </div>
+  </div>
+</div>
+</body>
+</html>
